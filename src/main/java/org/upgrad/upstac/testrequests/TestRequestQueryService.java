@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @Validated
 public class TestRequestQueryService {
 
-  private static Logger logger = LoggerFactory.getLogger(TestRequestQueryService.class);
+  private static final Logger logger = LoggerFactory.getLogger(TestRequestQueryService.class);
   @Autowired private TestRequestRepository testRequestRepository;
   @Autowired private LabResultRepository labResultRepository;
   @Autowired private ConsultationRepository consultationRepository;
