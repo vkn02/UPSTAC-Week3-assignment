@@ -40,7 +40,7 @@ public class ConsultationController {
   @GetMapping
   @PreAuthorize("hasAnyRole('DOCTOR')")
   public List<TestRequest> getForDoctor() {
-    // Get the logged in tester user and retrieve the consultation requests attended.
+    // Get the logged in doctor user and retrieve the consultation requests attended.
     User doctor = userLoggedInService.getLoggedInUser();
     log.info(
         "Displaying the list of consultation requests attended"
